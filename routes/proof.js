@@ -35,7 +35,7 @@ if(req.files[0]){
           const proof=  await new Proof({
                 amount:req.body.amount,
                 name:req.body.name,
-                screenshot:`http://www.zogibestfilms.com/${req.files[0].filename}`,
+                screenshot:`http://www.zogibestfilms.com/api/proof/one/${req.files[0].filename}`,
                 email:req.body.email
             })
             await proof.save()
