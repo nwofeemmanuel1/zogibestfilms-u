@@ -1,7 +1,7 @@
 
 {
     "connection":{
-        "url":"mongodb+srv://admin:desolidboy1@cluster0.e7al7.mongodb.net/zogibestfilms"
+        "url":"mongodb://localhost:27017/zogibestfilms"
     }
     
     }

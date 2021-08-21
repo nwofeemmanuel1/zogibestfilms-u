@@ -58,7 +58,7 @@ try{
       myFunction(result.message.video.videoLink)
       document.querySelector("b").innerHTML=result.message.thumbnail.video_name
       document.querySelector(".desc").innerHTML=result.message.thumbnail.video_description
-      document.querySelector(".price").innerHTML=`VIDEO LICENSE: ${result.message.license}`
+      document.querySelector(".price").innerHTML=`VIDEO LICENSE: #${result.message.license}`
 document.querySelector("#buy_video").onclick=()=>window.location.href=result.message.video.downloadLink
 }catch(err){
   document.body.innerHTML=`<h1 style="text-align:center;color:red"> ${err.message} </h1>`

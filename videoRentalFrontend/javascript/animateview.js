@@ -84,12 +84,17 @@ function isElementInViewport(el) {
 
 
 
-var myVar;
-function myLoader() {
-  myVar = setTimeout(showPage, 3000);
-}
+// var myVar;
+// function myLoader() {
+//   myVar = setTimeout(showPage, 3000);
+// }
 
 function showPage() {
   document.getElementById("loader").style.display = "none";
   document.getElementById("myDiv").style.display = "block";
 }
+
+document.addEventListener("DOMContentLoaded",()=>{
+setTimeout(()=>showPage(),2000)
+
+})

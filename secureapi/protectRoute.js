@@ -3,6 +3,7 @@
 const jwt=require("jsonwebtoken")
 
 const verifyToken=(req,res,next)=>{
+  
     if(req.body.token){
     try{
 const result=jwt.verify(req.body.token,"jwtPrivatekey")

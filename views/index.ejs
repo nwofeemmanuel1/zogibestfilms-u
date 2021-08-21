@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Watch video Preview</title>
     <link rel="stylesheet" href="/css/video.css">
     <link rel="stylesheet" href="/css/viewmore.css">
     <link rel="stylesheet" href="/css/nav.css">
@@ -29,8 +29,8 @@
             <li><a href="/freevideos.html"> free videos</a></li>
             <li><a href="/videos.html">Buy videos</a></li>
             <li><a href="/myvideos.html" class="myvideos" id="myvideos"></a></li>
-            
-            <li id="gotodashboard" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; cursor: pointer;" > 
+            <li><a href="/search.html">Search videos</a></li>
+            <li id="gotodashboard" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; cursor: pointer;" onclick="window.location.href='/dashboard.html'" > 
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwp--EwtYaxkfsSPIpoSPucdbxAo6PancQX1gw6ETSKI6_pGNCZY4ts1N6BV5ZcN3wPbA&usqp=CAU" alt="" style="height: 29px; width: 35px;">
                      <a class="useremail" id="useremail" >
                       </a></li>
@@ -70,18 +70,18 @@
         select{
   padding: 11px;
   width: 60%;
-  opacity: 0.7;
   margin: 4px;
 color: gray;
-background-color: red;
+font-size: large;
+
 }
     </style>
    
     <select id="prices" style="background-color:#fff; border: 1.5px solid black;">
         <option value="">select prices/license</option>
-<option   value="<%=videopricefor1day %> for (ONE DAY LICENSE)"><%=videopricefor1day %> for (ONE DAY LICENSE)</option>
-    <option value="<%=videopricefor1year %> for (ONE YEAR LICENSE)"><%=videopricefor1year %> for (ONE YEAR LICENSE)</option>
- <option value="<%=videopricefor1day %> for (THREE YEARS LICENSE)"><%=videopricefor1day %> for (THREE YEARS LICENSE)</option>
+<option   value="<%=videopricefor1day %> for (ONE DAY LICENSE)">#<%=videopricefor1day %> valid for (ONE DAY LICENSE)</option>
+    <option value="<%=videopricefor1year %> for (ONE YEAR LICENSE)">#<%=videopricefor1year %> valid for (ONE YEAR LICENSE)</option>
+ <option value="<%=videopricefor1day %> for (THREE YEARS LICENSE)">#<%=videopricefor1day %> valid for (THREE YEARS LICENSE)</option>
     </select>
      
         <button class="button-button" id="buy_video">Buy Video</button>
@@ -95,6 +95,6 @@ background-color: red;
 <script src="/javascript/nav.js"></script>
 <script src="/javascript/getcookie.js"></script>
 
-<script src="javascript/gotodashboard.js"></script>
+
 </body>
 </html>

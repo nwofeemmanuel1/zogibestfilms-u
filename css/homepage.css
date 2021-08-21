@@ -137,6 +137,11 @@ font-weight: 500;
     }
     
     
+
+
+
+
+
     /*LOADER*/
     .loading {
       width: 100vw;
@@ -144,7 +149,7 @@ font-weight: 500;
       position: fixed;
       top: 0;
       left: 0;
-      background: #292970;
+      background: #FFF;
       display: flex;
       flex-direction: column;
       align-items: stretch;
@@ -163,11 +168,17 @@ font-weight: 500;
         margin-top: 0;
       }
       25% {
+        position: relative;
         height: 4pt;
-        margin-top: 23pt;
+        margin-top: 50pt;
+        transform: rotateY(360deg);
+     
       }
       50% {
         width: 4pt;
+        margin-top: 50pt;
+        transform: rotateY(360deg);
+        
       }
       75% {
         width: 50pt;
@@ -176,6 +187,7 @@ font-weight: 500;
         width: 50pt;
         height: 50pt;
         margin-top: 0;
+        transform: rotateZ(360deg);
       }
     }
     
@@ -188,6 +200,7 @@ font-weight: 500;
       margin-right: auto;
       background-color: transparent;
       animation: loading 1s infinite;
+      transition: all;
     }
     
     .load-text {
@@ -196,6 +209,11 @@ font-weight: 500;
       font: 14pt "Helvetica Neue", Helvetica, Arial, sans-serif;
       color: #fff;
     }
+
+
+
+
+
     /* Add animation to "page content" */
     .animate-bottom {
       position: relative;

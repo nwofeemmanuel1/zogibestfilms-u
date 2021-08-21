@@ -20,9 +20,11 @@
 
 const submitproof=async(screenshot,name,amount)=>{
     const email=getCookie("email")
-    console.log(email)
+    const token=getCookie("token")
+    console.log(email,token)
     document.querySelector("#submit-proof").innerHTML="submitting..."
 const proof =new FormData()
+proof.append("token",token)
 proof.append("screenshot",screenshot)
 proof.append("name",name)
 proof.append("amount",amount)

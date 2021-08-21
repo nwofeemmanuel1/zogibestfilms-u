@@ -4,6 +4,7 @@ const multer=require("multer")
 const Proof=require("../model/Proof")
 const validateproof=require("../validations/validateproof")
 // const user=await User.findOne({email:req.body.email})
+const protectRoute=require("../secureapi/protectRoute")
 const User=require("../model/Register")
 const storage=multer.diskStorage({
     destination:(req,file,cb)=>{
@@ -27,7 +28,7 @@ const uploads=multer({storage:storage,fileFilter:FileFilter})
 
 
 
-Router.post("/",uploads.any("video"),async(req,res)=>{
+Router.post("/",uploads.any("video"),protectRoute,async(req,res)=>{
 if(req.files[0]){
     const proofisvalid=validateproof(req.body)
     if(proofisvalid===true){
