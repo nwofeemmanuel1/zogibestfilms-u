@@ -149,7 +149,7 @@ font-weight: 500;
       position: fixed;
       /* top: 0; */
       left: 0;
-      bottom: 100px;
+      bottom: 40px;
       background: #FFF;
       display: flex;
       flex-direction: column;
