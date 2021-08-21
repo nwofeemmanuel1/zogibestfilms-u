@@ -147,8 +147,9 @@ font-weight: 500;
       width: 100vw;
       height: 100vh;
       position: fixed;
-      top: 0;
+      /* top: 0; */
       left: 0;
+      bottom: 100px;
       background: #FFF;
       display: flex;
       flex-direction: column;
@@ -170,22 +171,22 @@ font-weight: 500;
       25% {
         position: relative;
         height: 4pt;
-        margin-top: 50pt;
+        margin-top: 40pt;
         transform: rotateY(360deg);
      
       }
       50% {
         width: 4pt;
-        margin-top: 50pt;
+        margin-top: 40pt;
         transform: rotateY(360deg);
         
       }
       75% {
-        width: 50pt;
+        width: 40pt;
       }
       100% {
         width: 50pt;
-        height: 50pt;
+        height: 40pt;
         margin-top: 0;
         transform: rotateZ(360deg);
       }
@@ -512,7 +513,7 @@ font-weight: 500;
     /* background-image: url("../css/images/poster.jpg"); */
     background-size:100% 100%;
     /* background-image: url("../css/images/home.jpg"); */
-    background-image: url("https://thumbs.dreamstime.com/b/young-woman-smart-phone-chatting-outdoor-fall-winter-season-161959902.jpg");
+     background-image: url("../css/images/banner2.jpg");
     }
     
 

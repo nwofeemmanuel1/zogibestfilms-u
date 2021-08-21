@@ -95,6 +95,6 @@ function showPage() {
 }
 
 document.addEventListener("DOMContentLoaded",()=>{
-setTimeout(()=>showPage(),2000)
+setTimeout(()=>showPage(),3000)
 
 })
