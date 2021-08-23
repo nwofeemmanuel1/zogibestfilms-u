@@ -3,6 +3,7 @@ const Router=express.Router()
 const multer=require("multer")
 const Thumbnail=require("../model/ThumbNail")
 const isvalid=require("../validations/validatethumbnail")
+const Joi=require("joi")
 const storage=multer.diskStorage({
 destination:(req,file,cb)=>{
 cb(null,"./thumbNail")
@@ -28,12 +29,14 @@ const FileFilter=(req,file,cb)=>{
 const uploads=multer({storage:storage,fileFilter:FileFilter})
 
 Router.post("/", uploads.any("video"), async(req,res)=>{
+   
 if(req.files[0]){
    // console.log(req.files)
 const uploadIsValid=isvalid(req.body)
+
 if(uploadIsValid ==true){
 
-   try{
+   try{ 
 
       const newthumbnail=await new Thumbnail({
    imageLink:`https://zogibestfilms.herokuapp.com/api/seevideothumbnail/${req.files[0].filename}`,
@@ -67,7 +70,7 @@ res.json({error:true,errMessage:uploadIsValid})
 }
 // return res.send("no file uploaded an error occured")
 
-
+ 
 
 })
 
@@ -82,6 +85,36 @@ return res.status(404).json({error:true,errMessage:"sorry no video has been adde
    }catch(err){
       res.status(400).json({error:true,errMessage:err.message})
    }
+})
+
+
+
+const validatesearch=(searchKey)=>{
+   const schema=Joi.object({
+      searchKey:Joi.string().required()
+   })
+   const result=schema.validate({searchKey:searchKey})
+   if(result.error)return result.error.message
+return true
+}
+
+Router.post("/searchforvideo",async(req,res)=>{
+const searchisvalid=validatesearch(req.body.searchKey)
+if(searchisvalid==true){
+   let replace = req.body.searchKey;
+   var expression = new RegExp(`.*${replace}.*`);
+
+   try{
+      const regex=`/.*${req.body.searchKey}.*/`
+   const result=await Thumbnail.find({video_name:expression})
+       if(result[0])return res.status(200).json({error:false,message:result})
+       return res.status(404).json({error:true,errMessage:"No result found"})
+          }catch(err){
+             res.status(400).json({error:true,errMessage:err.message})
+                }
+      }else{
+         res.status(400).json({error:true,errMessage:searchisvalid})
+      }
 })
 
 module.exports=Router

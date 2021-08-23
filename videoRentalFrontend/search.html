@@ -4,9 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search for latest and old movies here</title>
+    <title>Search for latest and old nigerian movies</title>
+    <link rel="stylesheet" href="/css/search.css">
+    <link rel="stylesheet" href="css/index.css" />
+   
 </head>
 <body>
-    
+<div class="tittle" style="height: 200px;"><h1>Search for latest and old nigerian movies</h1></div >    
+   
+    <nav>
+   <input type="text" name="search" id="search" placeholder="search for videos">
+   <!-- <button class="button-button">Search</button> -->
+    </nav>
+<main style="padding-top: 0.1em;">
+
+</main>
+  
+ 
+    <script src="javascript/search.js"></script>
+    <script>
+document.addEventListener("scroll",()=>{
+    document.querySelector("nav").style.top="0px"
+    document.querySelector(".tittle").style.display="none"
+})
+
+    </script>
 </body>
 </html>

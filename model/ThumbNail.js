@@ -1,5 +1,6 @@
 const mongoose=require("mongoose")
 const config=require("config")
+
 mongoose.connect(config.get("connection.url"),{useNewUrlParser:true,useUnifiedTopology:true})
 .then(()=>console.log("connected to thumbnail"))
 .catch(err=>console.log(err.message))
