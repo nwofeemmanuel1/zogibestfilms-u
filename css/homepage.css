@@ -1,3 +1,4 @@
+/* https://www.paypalobjects.com/webstatic/en_GB/mktg/wright/home/homepage-hero-1x.jpg */
 /* h5 class="slide-menu"" */
 @keyframes moveli {
   0%{
@@ -44,7 +45,9 @@
 font-weight: 500;
 
     }
+
     li p{
+     
     animation-name: moveli;
     animation-duration: 6s;
     animation-iteration-count: infinite;
@@ -52,6 +55,18 @@ font-weight: 500;
     transition-property: all;
     transition-duration: 6s;
     
+    }
+    @media (max-width:600px) {
+      li p{
+     font-size: 1.3em;
+        animation-name: moveli;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+        animation-direction: forwards;
+        transition-property: all;
+        transition-duration: 6s;
+        
+        } 
     }
     a{
     text-decoration:none;
@@ -510,10 +525,11 @@ font-weight: 500;
     /* change main backgroun here its easy
      */
     .main{
+    
     width:100%;
     height:100vh;
     /* background-image:url("https://thumbs.dreamstime.com/b/beautiful-girl-chatting-mobile-phone-autumn-outdoor-portrait-47812124.jpg"); */
-    background-image: url("https://www.paypalobjects.com/webstatic/en_GB/mktg/wright/home/homepage-hero-1x.jpg");
+    background-image: url("images/ceo3.jpg");
     background-size:100% 100%;
     /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpCqivCUqL1NQOt84FlcgslZ4ZYGq3dO-U5w&usqp=CAU") */
      /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd1RAkwmOMS7fAxnHMqdocmBgo77vWd2402A&usqp=CAU"); */
@@ -525,9 +541,8 @@ font-weight: 500;
 @media (max-width:800px) {
   .main{
     width:100%;
-    height:90vh;
-    /* background-image:url("https://thumbs.dreamstime.com/b/beautiful-girl-chatting-mobile-phone-autumn-outdoor-portrait-47812124.jpg"); */
-    background-image: url("https://www.paypalobjects.com/webstatic/en_GB/mktg/wright/home/homepage-hero-1x.jpg");
+    height:100vh;
+    background-image: url("images/ceo3.jpg");
     background-size: cover;
    
   }
@@ -696,57 +711,61 @@ right: 2em; */
     
     
     
+
+
     /*CONTAINER*/
-    .container{
-    width:100%;
+  .containerDiv{
+    width: 100%;
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: auto;
+   position: relative;
+   /* bottom: 80px; */
+   background-image: url("https://www.paypalobjects.com/webstatic/en_GB/mktg/wright/home/homepage-hero-1x.jpg");
+   background-repeat: no-repeat; 
+    background-size: cover;
+    color: #fff;
+  }
+    .containerDiv img{
+      width: 90%;
     }
-    
-    .container table{
-    width:100%;
-
+.imagediv{
+width: 30%;
+}
+    .creativediv{
+      width: 60%;
     }
-    
-    .container table td{
-    width:50%;
-  
-    }
-    
-    .container table td img{
-    margin:auto;
+@media (max-width:700px) {
+  .containerDiv{
+    width: 100%;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+   position: relative;
+   bottom: 80px;
+   flex-wrap: wrap;
+   margin: auto;
+   font-size: 13px;
+   font-family: 'Times New Roman', Times, serif;
+   font-weight: bolder;
+  }
+  .containerDiv img{
     width: 70%;
-    }
-    
-    .container table td:nth-child(2),.container table .aboutus_td2{
-    padding:20px;
-    }
-    
-    @media (max-width:600px){
-    .container table td{
+  }
+  .imagediv{
+    width: 100%;
+    text-align: center;
+    margin: auto;
 
-    width:100%;
-    display:block;
     }
-    .container table td img{
-    width:90%;
-   
-    }
-    .container table td:nth-child(2),.container table .aboutus_td2{
-    padding:10px;
-    width:95%;
-    }
-    }
-    
-    
-    
-    
-    
-    
-    
-
-
-
-
-
+        .creativediv{
+          width: 100%;
+          position: relative;
+          bottom: 40px;
+        }
+}
 
 
 
@@ -926,17 +945,20 @@ right: 2em; */
             width:100%;
             margin-left:auto;
             margin-right:auto;
-
+height: auto;
             }
         
            .slick table td{
            width:95%;
            display:block;
            padding:0%;
+           margin: 0px;
            display: flex;
            flex-direction: column;
            align-self: center;
            align-items: center;
+           position: relative;
+           bottom: 100px;
            }
            .slick table td ul{
            width:85%;
@@ -947,45 +969,51 @@ right: 2em; */
             .slick .card {
             position: relative;
             width: 60%;
-            height:50vh;
+            height:0vh;
             overflow: hidden;
             border-radius: 5px;
            }
-           }
-           
-           @media (max-width:500px){
-           .slick table td{
-           width:100%;
-           display:block;
-          display: flex;
-          /* flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          align-self: center; */
-           }
-           .slick table td:nth-child(1) ul{
-            text-align:left;
-            }
-            .title{
+           .title{
             font-size:1.3em;
             }
             .sub-title{
             font-size:1.2em;
             }
+           }
+           
+           /* @media (max-width:500px){
+           .slick table td{
+           width:100%;
+           display:block;
+          display: flex;
+          
+           }
+           .slick table td:nth-child(1) ul{
+            text-align:left;
+            }
+            .title{
+            font-size:1.9em;
+            }
+            .sub-title{
+            font-size:1.9em;
+            }
             .slick table td ul li{
             padding:5px 0px;
             }
-           }
+           } */
            
            
-    
+    .set{
+      background-image: url("/css/images/images\ \(10\).jpeg");
+     
+    }
     .section1{
     width:90%;
     margin:auto;
    
     }
     .section1 .accordion {
-      background-color: #eee;
+      background-color: #fff;
       color: #444;
       cursor: pointer;
       padding: 18px;
@@ -1002,7 +1030,7 @@ right: 2em; */
     }
     
     .section1 .active,.section1 .accordion:hover {
-      background-color: #ccc;
+      background-color:transparent;
     }
     
     .accordion:after {
