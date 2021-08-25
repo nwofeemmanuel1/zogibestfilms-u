@@ -94,7 +94,7 @@ function showPage() {
   document.getElementById("myDiv").style.display = "block";
 }
 
-// document.addEventListener("DOMContentLoaded",()=>{
-// setTimeout(()=>showPage(),3000)
+document.addEventListener("DOMContentLoaded",()=>{
+setTimeout(()=>showPage(),3000)
 
-// })
+})

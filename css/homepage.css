@@ -1004,8 +1004,9 @@ height: auto;
            
            
     .set{
-      background-image: url("/css/images/images\ \(10\).jpeg");
-     
+      background-image: url("/css/images/images\ \(11\).jpeg");
+     background-size: cover;
+     background-repeat: no-repeat;
     }
     .section1{
     width:90%;
@@ -1013,7 +1014,7 @@ height: auto;
    
     }
     .section1 .accordion {
-      background-color: #fff;
+      background-color:#fff;
       color: #444;
       cursor: pointer;
       padding: 18px;
