@@ -49,7 +49,7 @@ if(result.error){
     //   document.querySelector(".preview").style.display="block"
 
 
-
+  
     //   console.log(state.video_thumbnail)
     alert("success we recommend you call customer care :+2347017698683 and let them know you made payment so your payment will be verified immediately thanks! ")
     window.location.href="/"

@@ -1,3 +1,23 @@
+// Download a file form a url.
+function saveFile(url) {
+  // Get file name from url.
+  var filename = url.substring(url.lastIndexOf("/") + 1).split("?")[0];
+  var xhr = new XMLHttpRequest();
+  xhr.responseType = 'blob';
+  xhr.onload = function() {
+    var a = document.createElement('a');
+    a.href = window.URL.createObjectURL(xhr.response); // xhr.response is a blob
+    a.download = filename; // Set the file name.
+    a.style.display = 'none';
+    document.body.appendChild(a);
+    a.click();
+    delete a;
+  };
+  xhr.open('GET', url);
+  xhr.send();
+}
+
+
 let state={}
 const getParam=()=>{
     const params = new URLSearchParams(window.location.search)
@@ -59,7 +79,7 @@ try{
       document.querySelector("b").innerHTML=result.message.thumbnail.video_name
       document.querySelector(".desc").innerHTML=result.message.thumbnail.video_description
       document.querySelector(".price").innerHTML=`VIDEO LICENSE: #${result.message.license}`
-document.querySelector("#buy_video").onclick=()=>window.location.href=result.message.video.downloadLink
+document.querySelector("#buy_video").onclick=()=>saveFile(result.message.video.videoLink)
 }catch(err){
   document.body.innerHTML=`<h1 style="text-align:center;color:red"> ${err.message} </h1>`
 }

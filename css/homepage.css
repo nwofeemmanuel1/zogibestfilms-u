@@ -1,3 +1,4 @@
+/* https://codepen.io/theConstructor/pen/vKNRdE */
 /* https://www.paypalobjects.com/webstatic/en_GB/mktg/wright/home/homepage-hero-1x.jpg */
 /* h5 class="slide-menu"" */
 @keyframes moveli {
@@ -1004,9 +1005,9 @@ height: auto;
            
            
     .set{
-      background-image: url("/css/images/images\ \(11\).jpeg");
+      /* background-image: url("/css/images/images\ \(11\).jpeg");
      background-size: cover;
-     background-repeat: no-repeat;
+     background-repeat: no-repeat; */
     }
     .section1{
     width:90%;
