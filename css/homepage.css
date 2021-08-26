@@ -1004,11 +1004,11 @@ height: auto;
            } */
            
            
-    .set{
-      /* background-image: url("/css/images/images\ \(11\).jpeg");
+    /* .set{
+      background-image: url("/css/images/IMG-20210825-WA0007.jpg");
      background-size: cover;
-     background-repeat: no-repeat; */
-    }
+     background-repeat: no-repeat;
+    } */
     .section1{
     width:90%;
     margin:auto;
@@ -1063,9 +1063,7 @@ height: auto;
      }
     
     
-    
-    
-    
+   
     /*FOOTER*/
     .footer{
     width:100%;

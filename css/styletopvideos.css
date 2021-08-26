@@ -1,0 +1,45 @@
+@keyframes changetopvideoimage {
+ 0%{
+    background-image: url("/css/images/selling1.jpg");
+ }
+ 25%{
+    background-image: url("/css/images/selling2.jpg");
+ }
+   
+ 50%{
+    background-image: url("/css/images/selling3.jpg");
+ }
+
+ 75%{
+    background-image: url("/css/images/selling4.jpg");
+ }
+ 100%{
+    background-image: url("/css/images/selling3.jpg");
+ }
+
+
+  }
+  
+  .topvideos{
+   
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+  animation-name: changetopvideoimage;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  }
+
+
+  /* .topvideos::before{
+   content: 'mtcheew';
+   font-size: 100px;
+   color: #fff;
+   text-align: center;
+  } */
+
+
+
