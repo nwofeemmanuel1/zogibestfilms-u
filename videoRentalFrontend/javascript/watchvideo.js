@@ -17,6 +17,25 @@ function saveFile(url) {
   xhr.send();
 }
 
+function download(url, filename) {
+  fetch(url).then(function(t) {
+      return t.blob().then((b)=>{
+          var a = document.createElement("a");
+          a.href = URL.createObjectURL(b);
+          a.setAttribute("download", filename);
+          a.click();
+      }
+      );
+  });
+  }
+  
+  // download("https://res.cloudinary.com/zogibestfilms/image/upload/v1630045940/public/myfolder.png")
+
+
+
+
+
+
 
 let state={}
 const getParam=()=>{
@@ -74,12 +93,13 @@ try{
       })
       const result=await response.json()
       console.log(result)
+      console.log(result.message.thumbnail.imageLink)
      if(result.error)return document.body.innerHTML=`<h1 style="text-align:center;color:red"> ${result.errMessage} </h1>`
       myFunction(result.message.video.videoLink)
       document.querySelector("b").innerHTML=result.message.thumbnail.video_name
       document.querySelector(".desc").innerHTML=result.message.thumbnail.video_description
       document.querySelector(".price").innerHTML=`VIDEO LICENSE: #${result.message.license}`
-document.querySelector("#buy_video").onclick=()=>saveFile(result.message.video.videoLink)
+document.querySelector("#buy_video").onclick=()=>download(result.message.thumbnail.imageLink,result.message.thumbnail.video_name)
 }catch(err){
   document.body.innerHTML=`<h1 style="text-align:center;color:red"> ${err.message} </h1>`
 }
