@@ -6,4 +6,10 @@
   color: black;
 }
 
+@media (min-width:350px) {
+  .list{
+position: relative;
+right: 30%;
 
+  }
+}
