@@ -322,22 +322,24 @@
   <!-- https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3 -->
   <script>
 function play() {
-  var audio = new Audio('./audio.mp3');
+  var audio = new Audio('https://filedn.com/lugz7OrEslQuai3CpeGroWB/audio.mp3');
   audio.play();
 }
-// let video_played=false
-// document.addEventListener("scroll",()=>{
-// if(video_played===false){
-//   video_played=true
-//   console.log("now playing")
-//   play()
-//   setTimeout(()=>play(),20000)
-// }
-  setTimeout(()=>play(),4000)
-  setTimeout(()=>play(),7000)
-  setTimeout(()=>play(),15000)
+let video_played=false
+document.addEventListener("scroll",()=>{
+if(video_played===false){
+  video_played=true
+  console.log("now playing")
+  // play()
+  // setTimeout(()=>play(),20000)
+
+  setTimeout(()=>play(),2000)
+  setTimeout(()=>play(),8000)
+  // setTimeout(()=>play(),15000)
   setTimeout(()=>play(),30000)
-// })
+}
+ 
+})
   </script>
 
 <!-- <button onclick="play()">Play Audio</button> -->
