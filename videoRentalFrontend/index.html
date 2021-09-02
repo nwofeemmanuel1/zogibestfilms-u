@@ -325,18 +325,18 @@ function play() {
   var audio = new Audio('./audio.mp3');
   audio.play();
 }
-let video_played=false
-document.addEventListener("scroll",()=>{
-if(video_played===false){
-  video_played=true
-  console.log("now playing")
-  play()
-  setTimeout(()=>play(),20000)
-}
-  // // setTimeout(()=>play(),4000)
-  // setTimeout(()=>play(),7000)
-  // setTimeout(()=>play(),30000)
-})
+// let video_played=false
+// document.addEventListener("scroll",()=>{
+// if(video_played===false){
+//   video_played=true
+//   console.log("now playing")
+//   play()
+//   setTimeout(()=>play(),20000)
+// }
+  setTimeout(()=>play(),4000)
+  setTimeout(()=>play(),7000)
+  setTimeout(()=>play(),30000)
+// })
   </script>
 
 <!-- <button onclick="play()">Play Audio</button> -->
