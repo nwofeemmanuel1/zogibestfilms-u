@@ -34,14 +34,14 @@
 </head>
 <body>
 
-<!-- <div class="loading" id="loader">
+<div class="loading" id="loader">
   <h1 style="text-align: center;">Loading...</h1>
 <div class="load">
 <div class="loader">
 </div>
 </div>
 </div>
-<div style="display:none;" id="myDiv" class="animate-bottom"> -->
+<div style="display:none;" id="myDiv" class="animate-bottom">
 
 
 <header>
@@ -313,8 +313,28 @@
 
 
 
+  <!-- <audio controls autoplay>
+    <source src="audio.mp3" type="audio/ogg">
+    <source src="audio.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio> -->
+  
+  <!-- https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3 -->
+  <script>
+function play() {
+  var audio = new Audio('./audio.mp3');
+  audio.play();
+}
 
+document.addEventListener("DOMContentLoaded",()=>{
+  let data=1
+  setTimeout(()=>play(),4000)
+  setTimeout(()=>play(),6000)
+  setTimeout(()=>play(),30000)
+})
+  </script>
 
+<!-- <button onclick="play()">Play Audio</button> -->
 
 
 
