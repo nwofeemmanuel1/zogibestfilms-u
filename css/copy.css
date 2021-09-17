@@ -1,0 +1,235 @@
+/* content: "\E91A";
+    font-family: PPUI-Icons!important;
+    speak: none;
+    font-style: normal;
+    font-weight: 500;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    font-size: 1.125rem;
+    margin-right: .375rem;
+    margin-left: 0; */
+    body {
+        padding: 0%;
+        margin: 0%;
+      }
+      .hideone{
+        opacity: 0;
+      }
+        .showError{
+       color: red;
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       font-weight: bold;
+      }
+      .showError::before{
+        content: "\E91A";
+        font-family: PPUI-Icons!important;
+        /* speak: none; */
+        font-style: normal;
+        font-weight: 500;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        font-size: 1.125rem;
+        margin-right: .375rem;
+        margin-left: 0;
+      }
+      .header2 {
+      
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        justify-content: space-between;
+        top: 12px;
+       
+      }
+      .header2 > img {
+        height: 40px;
+        margin: auto;
+      left: 100%;
+      }
+      .header2 >a{
+      position: relative;
+      right: 28%;
+      top: 10px;
+      font-weight: bold;
+      }
+      
+      .content {
+       
+       
+      
+      }
+      /* .policy {
+      width: 500px;
+      
+      } */
+      
+      .content #btnLogin {
+      width: 120px;
+        border-radius: 50px;
+        margin: auto;
+      }
+      
+      
+      .paypal{
+          padding-top: 20px;
+         
+      }
+      
+      
+      @media (max-width: 600px) {
+      .content{
+        text-align: unset;
+      
+      
+      
+      
+      }
+        
+        input {
+          padding: 11px;
+          width: 95%;
+          opacity: 0.8;
+      position: relative;
+      font-weight: 500;
+      font-size: 1.125rem;
+      border-radius: 5px;
+      border-width: 1px;
+        }
+      
+       .inputerror {
+          padding: 11px;
+          width: 95%;
+          opacity: 0.8;
+      position: relative;
+      font-weight: 500;
+      font-size: 1.125rem;
+      border-radius: 5px;
+      border-color: #d20000;
+        }
+      
+        .input{
+      text-align: center;
+      }
+        .paypal{
+         padding-top :40px;
+        
+        }
+      .paypal h1{
+        position: relative;
+      font-weight: 500;
+        /* position: relative; */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      font-size: 2rem;
+      line-height: 2.5rem;
+      padding-bottom: 15px;
+      }
+      .paypal p{
+      
+      text-align: center;
+      font-weight: 500;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      /* line-height: 14px; */
+      position:relative;
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+      
+      }
+      p{
+        text-align: center;
+      font-weight: 500;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      /* line-height: 14px; */
+      position:relative;
+      font-size: 1.05rem;
+      line-height: 1.55rem;
+      }
+      
+      
+      .policy {
+      
+      width: 100%;
+      }
+      .content #btnLogin {
+      width: 120px;
+        /* padding: 17px; */
+        border-radius: 50px;
+        /* margin: auto;
+        color: white;
+        font-weight: bolder;
+        margin-top: 25px;  */
+        margin: auto;
+      }
+      
+      
+      }
+      
+      
+      @media (min-width:601px) {
+        .header2{
+      display: flex;
+      text-align: center;
+      justify-content: space-between;
+        }
+      
+        .header2 > img {
+        height: 40px;
+        /* margin: auto;
+      left: 100%; */
+      }
+      input {
+        padding: 11px;
+        width: 95%;
+        opacity: 0.8;
+      position: relative;
+      font-weight: 500;
+      font-size: 1.125rem;
+      border-radius: 5px;
+      border-width: 1px;
+      }
+        .content {
+      position: relative;
+      
+      margin: auto;
+      width: 500px;
+      /* padding-left: 20%; */
+      top: 30px;
+      /* left:6% ; */
+      }
+      
+      .paypal h1{
+        position: relative;
+      font-weight: 500;
+        /* position: relative; */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      font-size: 2rem;
+      line-height: 2.5rem;
+      padding-bottom: 7px;
+      }
+      .paypal p{
+      
+      text-align: center;
+      font-weight: 500;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      /* line-height: 14px; */
+      position:relative;
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+      padding-bottom: 10px;
+      }
+      
+      p{
+        
+      font-weight: 500;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      /* line-height: 14px; */
+      position:relative;
+      font-size: 1.05rem;
+      line-height: 1.55rem;
+      }
+      
+      }
+      
