@@ -9,8 +9,13 @@ article{
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 article p{
-font-size: 17px;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* line-height: 14px; */
+    position:relative;
+    font-size: 1.05rem;
+    line-height: 1.55rem;
+    color: rgb(58, 57, 57);
 }
 
 article >div{
