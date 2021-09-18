@@ -29,7 +29,7 @@ body:JSON.stringify({email,token})
     if(result.error)return window.location.href("/")
     document.querySelector(".phone").innerHTML=`Phone number:${result.user.phone_number}`
     document.querySelector(".email").innerHTML=` Email:${result.user.email}`
-     document.querySelector(".balance2").innerHTML=`Available Balance:#${result.user.balance}.00`
+     document.querySelector(".balance2").innerHTML=`Available Balance:₦${result.user.balance}.00`
     // document.querySelector(".balance2").innerHTML=`Available balance:#${result.user.balance}.00`
     // document.querySelector(".balance3").innerHTML=`Available balance:#${result.user.balance}.00`
     // document.querySelector(".abalance").innerHTML=`Available balance:#${result.user.balance}.00`
