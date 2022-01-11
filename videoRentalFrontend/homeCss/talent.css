@@ -43,9 +43,13 @@
     .africatalent>div p{
         
         position: relative;
+        font-size: 16px;
+        color: rgb(54, 52, 52);
         /* left: 2px; */
     }
-    
+    .africatalent>div h2{
+        font-size: 18px;
+    }
     .africatalent >div img{
         width: 100%;
         border-radius: 2px;

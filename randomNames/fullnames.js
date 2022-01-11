@@ -1,0 +1,3 @@
+const fullNames=[
+    "james"
+]
