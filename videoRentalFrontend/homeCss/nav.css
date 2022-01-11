@@ -233,7 +233,7 @@ opacity: 1;
            overflow-y: hidden;
            overflow-x: hidden;
            height: 80px;
-         font-family: "Poppins" ,z-index: 2; sans-serif;
+         font-family: "Poppins" ,
 
         }
         .navopen img, .navclose img{

@@ -118,7 +118,7 @@ top:190px;
 
     @media (max-width:600px) {
         .testim {
-            width: 100%;
+          
         position: relative;
         top: 300px;
             
@@ -127,6 +127,15 @@ top:190px;
             -ms-transform: translatey(-50%);
             -o-transform: translatey(-50%);
             transform: translatey(-50%);
+
+            box-shadow: 0 9px 68px 0 rgb(62 57 107 / 20%);
+    position: relative;
+    margin: auto;
+    height: auto;
+    width: 90%;
+    text-align: center;
+    overflow: hidden;
+    padding: 10px
     }
     
     
