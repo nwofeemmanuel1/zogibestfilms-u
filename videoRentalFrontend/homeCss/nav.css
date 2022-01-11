@@ -21,7 +21,7 @@ top: 0;
 left: 0;
 right: 0;
 bottom: 0;
-z-index: 2;
+/* z-index: 2; */
         }
     }
 
@@ -41,7 +41,7 @@ opacity: 1;
         animation-name: movenavopen;
         animation-duration: 0.7s;
         animation-fill-mode: forwards;
-        position: fixed;
+        position: relative;
         background-color: #fff;
         box-shadow: 0 3px 15px rgb(0 0 0 / 10%);
         top: 0;
@@ -121,7 +121,7 @@ opacity: 1;
         bottom: 0;
         z-index: 2;
 
-        position: fixed; 
+       position: relative; 
         width: 100%;
         display: flex;
         /* flex-direction: column; */
@@ -167,7 +167,7 @@ height: 0px;
        .navopen .harmburgericon{
         display: block;
         display: flex;
-        position: relative;
+       position: relative;
         
        left: 25%;
     }
@@ -223,7 +223,7 @@ opacity: 1;
             box-shadow: 0 3px 15px rgb(0 0 0 / 10%);
             top: 0;
             left: 0;
-            position: fixed; 
+            position: relative; 
             width: 100%;
             display: flex;
             flex-direction: row;
@@ -233,7 +233,7 @@ opacity: 1;
            overflow-y: hidden;
            overflow-x: hidden;
            height: 80px;
-         /* font-family: "Poppins" , sans-serif; */
+         font-family: "Poppins" ,z-index: 2; sans-serif;
 
         }
         .navopen img, .navclose img{

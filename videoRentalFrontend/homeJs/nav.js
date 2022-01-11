@@ -9,8 +9,8 @@ document.querySelector("#close").onclick=()=>{
 document.addEventListener("DOMContentLoaded",()=>document.querySelector("nav").style.display='none')
 window.onscroll=()=>{
     if(window.scrollY ==0){
-        document.querySelector("nav").style.display='none'
-    }else{
         document.querySelector("nav").style.display='block'
+    }else{
+        document.querySelector("nav").style.display='none'
     }
 }
