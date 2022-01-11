@@ -1,3 +1,0 @@
-const fullNames=[
-    "james"
-]
