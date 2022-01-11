@@ -1,5 +1,5 @@
-.testim {
-    /* width: 100%; */
+/* .testim {
+    
 position: relative;
 top:190px;
     
@@ -22,11 +22,27 @@ top:190px;
 		-o-transform: translatey(-50%);
 		transform: translatey(-50%);
 }
+
+
+}
+
+@media (max-width:500px) {
+    .testim .arrow{
+        display: none;
+    }
+    
+    .testim .wrap {
+        position: relative;
+        width: 10px;
+        max-width: 1020px;
+        padding: 40px 20px;
+        margin: auto;
+    }
 }
 
 .testim .wrap {
     position: relative;
-    width: 100%;
+    width: 80%;
     max-width: 1020px;
     padding: 40px 20px;
     margin: auto;
@@ -35,7 +51,7 @@ top:190px;
 .testim .arrow {
     display: block;
     position: absolute;
-    /* color: red; */
+    
     cursor: pointer;
     font-size: 2em;
     top: 50%;
@@ -68,7 +84,65 @@ top:190px;
 
 .testim .arrow.right {
     right: 10px;
-}
+} */
+
+
+.testim {
+    
+    position: relative;
+    top:190px;
+        
+        -webkit-transform: translatey(-50%);
+        -moz-transform: translatey(-50%);
+        -ms-transform: translatey(-50%);
+        -o-transform: translatey(-50%);
+        transform: translatey(-50%);
+    }
+
+    .testim .arrow.left {
+        left: 10px;
+    }
+    
+    .testim .arrow.right {
+        right: 10px;
+    } 
+
+
+    .testim .wrap {
+        position: relative;
+        width: 70%;
+       
+        /* padding: 40px 20px; */
+        margin: auto;
+    }
+
+    @media (max-width:600px) {
+        .testim {
+            width: 100%;
+        position: relative;
+        top: 300px;
+            
+            -webkit-transform: translatey(-50%);
+            -moz-transform: translatey(-50%);
+            -ms-transform: translatey(-50%);
+            -o-transform: translatey(-50%);
+            transform: translatey(-50%);
+    }
+    
+    
+    .testim .wrap {
+        position: relative;
+        width: 100%;
+       padding: 2;
+       font-size: 17px;
+       padding: 3px;
+        /* padding: 40px 20px; */
+        margin: auto;
+        text-align: center;
+    }
+    }
+
+
 
 .testim .dots {
     text-align: center;
@@ -154,7 +228,7 @@ top:190px;
 .testim .cont div p {
     /* font-size: 1.15em; */
     /* color: #eee; */
-    width: 80%;
+    width: 100%;
     margin: auto;
 }
 
