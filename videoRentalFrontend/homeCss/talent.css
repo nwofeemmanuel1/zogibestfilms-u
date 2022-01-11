@@ -29,22 +29,26 @@
         width: 95%;
         position: relative;
         
-        padding: 16px;
+       
         background-color: #fff;
         box-shadow: 0 3px 15px rgb(0 0 0 / 10%);
       
       margin-top: 20px;
      
     }
+
+    .africatalent >div .entail{
+        padding: 10px;
+    }
     .africatalent>div p{
         
         position: relative;
-        left: 2px;
+        /* left: 2px; */
     }
     
     .africatalent >div img{
         width: 100%;
-        border-radius: 10px;
+        border-radius: 2px;
         margin: auto;
         padding: 0px;
     }
