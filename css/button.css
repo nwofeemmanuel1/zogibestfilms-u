@@ -1,68 +1,76 @@
 .button-button {
-  background-color: rgb(17, 17, 77);
-  color: white;
+  padding: 10px 14px;
+  display: block;
+  width: 150px;
+  background: #142c8e;
+  border-radius: 40px;
+  margin: 20px 0px;
   text-decoration: none;
-  padding: 15px;
-  border: 1px solid#4f000b;
-  width: 60%;
-  border-radius: 50px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: all;
-  transition-duration: 1s;
+  color: #fff;
+  text-align: center;
+  margin: auto;
+  border: 1px solid #142c8e;
+  cursor:pointer
 }
 .button-button:hover {
-  background-color: rgb(17, 17, 77);
-  color: white;
+  padding: 10px 14px;
+  display: block;
+  width: 150px;
+  background: #122b91;
+  border-radius: 40px;
+  margin: 20px 0px;
   text-decoration: none;
-  padding: 15px;
-  border: 1px solid#4f000b;
-  width: 65%;
-  border-radius: 8px;
+  color: #fff;
+  text-align: center;
+  margin: auto;
+  border: 1px solid #142c8e;
   cursor: pointer;
-  font-size: 1rem;
-
-  transform: scale(1);
-  -webkit-transform: scale(1);
-  transform: scaleZ(360deg);
 }
 
 .button-button:active {
-  background-color: #642e35;
-  color: white;
+  padding: 10px 14px;
+  display: block;
+  width: 150px;
+  background: #122b91;
+  border-radius: 40px;
+  margin: 20px 0px;
   text-decoration: none;
-  padding: 15px;
-  border: 1px solid#4f000b;
-  width: 89%;
-  border-radius: 50px;
+  color: #fff;
+  text-align: center;
+  margin: auto;
+  border: 1px solid #142c8e;
   cursor: pointer;
-  font-size: 1rem;
 }
 /* rgb(24, 24, 66) */
 @media (min-width: 800px) {
   .button-button {
-    background-color: rgb(17, 17, 77);
-    color: white;
+    padding: 10px 20px;
+    display: block;
+    width: 150px;
+    background: #122b91;
+    border-radius: 40px;
+    margin: 20px 0px;
     text-decoration: none;
-    padding: 15px;
-    border: 1px solid#4f000b;
-    width: 40%;
-    border-radius: 50px;
+    color: #fff;
+    text-align: center;
+    margin: auto;
+    border: 1px solid #142c8e;
     cursor: pointer;
-    font-size: 1rem;
   }
 
   .button-button:hover {
-    background-color: rgb(17, 17, 77);
-    color: white;
+    padding: 10px 20px;
+    display: block;
+    width: 150px;
+    background: #122b91;
+    border-radius: 40px;
+    margin: 20px 0px;
     text-decoration: none;
-    padding: 15px;
-    border: 1px solid#4f000b;
-    width: 50%;
-    border-radius: 8px;
+    color: #fff;
+    text-align: center;
+    margin: auto;
+    border: 1px solid #142c8e;
     cursor: pointer;
-    font-size: 1rem;
-    transform: scaleZ(360deg);
   }
 
   .button-button:active {

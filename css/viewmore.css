@@ -1,4 +1,4 @@
-span {
+/* span {
   bottom: 20%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: large;
@@ -16,7 +16,7 @@ span {
 
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: large;
-  /* background-color: #fff; */
+
   width: 100%;
   border-radius: 6px;
   box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
@@ -31,8 +31,24 @@ b {
   position: relative;
   text-align: center;
   margin: auto;
-  bottom: 5px;
 }
+
+
+
+.buyvideo {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+p{
+  position: relative;
+  color: rgb(32, 29, 29);
+  text-align: left;
+  top: 5px;
+ }
+
 
 @media (min-width: 800px) {
   .description {
@@ -49,9 +65,22 @@ b {
  margin: auto;
 
   }
+  .buyvideo {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin: auto;
+    padding: 50px;
+    position: relative;
+    bottom: 50px;
+  }
+  
+ 
 }
 
-/* a {
+ a {
   text-decoration: none;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: lighter;
@@ -66,9 +95,48 @@ b {
   font-weight: 500;
 } */
 
-.buyvideo {
+
+
+
+
+
+span .description{
+  box-shadow: 0 9px 68px 0 rgb(62 57 107 / 20%);
+    position: relative;
+    margin: auto;
+    height: 270px;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+.description::before{
+  content: '';
+    border-left: 80px solid transparent;
+    border-left-width: 80px;
+    border-left-style: solid;
+    border-left-color: transparent;
+    border-bottom: 80px solid #142c8e;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+.description>.videotag{
+  position: relative;
+  top: 12px;
+}
+
+
+@media (min-width:800px) {
+  .videotag p{
+    font-size: 20px;
+  }
+ 
+.buyvideo{
   display: flex;
-  text-align: center;
-  justify-content: space-around;
-  align-items: center;
+  /* align-items: center;
+  justify-content: center;
+  align-self: center; */
+  /* padding: 10%; */
+  margin: auto;
+}
 }
